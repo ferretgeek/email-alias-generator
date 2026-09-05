@@ -1,29 +1,12 @@
-<div align="center">
-  <img src="docs/images/social-preview.png" alt="邮箱别名生成器 — 纯浏览器本地" width="100%">
+# 邮箱标签地址生成器
 
-  # 邮箱别名生成器
+中文 · [English](README_EN.md)
 
-  中文 · [English](README_EN.md)
+在浏览器里批量生成 `名字+标签@邮箱域名` 形式的地址，为不同网站分配不同标签，并导出 TXT。它只生成地址，不创建新邮箱。
 
-  [![CI](https://github.com/ferretgeek/email-alias-generator/actions/workflows/ci.yml/badge.svg)](https://github.com/ferretgeek/email-alias-generator/actions/workflows/ci.yml)
-  [![CodeQL](https://github.com/ferretgeek/email-alias-generator/actions/workflows/codeql.yml/badge.svg)](https://github.com/ferretgeek/email-alias-generator/actions/workflows/codeql.yml)
-  [![License: MIT](https://img.shields.io/badge/License-MIT-2f817f.svg)](LICENSE)
-  [![纯本地](https://img.shields.io/badge/%E6%95%B0%E6%8D%AE-%E4%B8%8D%E5%87%BA%E6%B5%8F%E8%A7%88%E5%99%A8-e89b5d.svg)](#隐私设计)
+适用环境：浏览器，推荐用 Python 3.10+ 启动本地服务；需邮箱支持标签收件，iCloud 与自定义域名仅供兼容性试验。
 
-  [部署说明](docs/部署说明.md) · [技术与安全](docs/技术与安全.md) · [安全报告](SECURITY.md)
-</div>
-
-> 一个邮箱地址，批量拆成一组带标签的收件地址。全部在你的浏览器里完成。
-
-## 为什么会需要它
-
-大部分邮箱支持一种叫 **plus addressing** 的东西：`你的名字+任意标签@gmail.com` 发出的信，仍然会进你原来的收件箱。
-
-这意味着你可以给每个网站一个专属地址：`me+taobao@`、`me+github@`、`me+那个抽奖活动@`。哪天开始收垃圾邮件，一看地址就知道是谁泄露的，而且能单独过滤掉。
-
-手动一个个编太慢。这个工具批量生成：粘贴一批邮箱、设定标签规则，一次出几十上万个地址，导出 TXT。
-
-**全程在浏览器里跑，页面没有任何数据上传通道。**
+[本地使用](#三分钟开始) · [邮箱兼容性](#各平台到底支持到什么程度) · [部署说明](docs/部署说明.md)
 
 ## 界面
 

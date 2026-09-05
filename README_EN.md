@@ -1,29 +1,12 @@
-<div align="center">
-  <img src="docs/images/social-preview.png" alt="Email alias generator — entirely in your browser" width="100%">
+# Email tag address generator
 
-  # Email alias generator
+[中文](README.md) · English
 
-  [中文](README.md) · English
+Generate `name+tag@mail-domain` addresses in your browser, use a different tag for each website, and export the list as TXT. This generates addresses; it does not create mailbox accounts.
 
-  [![CI](https://github.com/ferretgeek/email-alias-generator/actions/workflows/ci.yml/badge.svg)](https://github.com/ferretgeek/email-alias-generator/actions/workflows/ci.yml)
-  [![CodeQL](https://github.com/ferretgeek/email-alias-generator/actions/workflows/codeql.yml/badge.svg)](https://github.com/ferretgeek/email-alias-generator/actions/workflows/codeql.yml)
-  [![License: MIT](https://img.shields.io/badge/License-MIT-2f817f.svg)](LICENSE)
-  [![Local only](https://img.shields.io/badge/data-never_leaves_the_browser-e89b5d.svg)](#privacy-by-design)
+Requirements: a browser and a mailbox that supports plus addressing. Python 3.10+ is recommended for local serving; iCloud and custom domains are compatibility experiments only.
 
-  [Deployment](docs/部署说明.md) · [Technical and security notes](docs/技术与安全.md) · [Security reporting](SECURITY.md)
-</div>
-
-> Split one address into an orderly set of tagged receiving addresses — entirely in your browser.
-
-## Why this exists
-
-Most mail providers support **plus addressing**: anything sent to `you+anytag@gmail.com` still lands in your normal inbox.
-
-That means you can give every website its own address: `me+shopping@`, `me+github@`, `me+that-giveaway@`. The day spam starts arriving, the address tells you who leaked it — and you can filter that one address away.
-
-Typing them by hand is slow. This generates them in bulk: paste a batch of addresses, set the tag rules, get anywhere from dozens to tens of thousands of addresses, export as TXT.
-
-**Everything runs in your browser. The page has no channel for uploading data at all.**
+[Local use](#getting-started) · [Mailbox compatibility](#exactly-how-far-each-platform-is-supported) · [Deployment](docs/部署说明.md)
 
 ## Interface
 
